@@ -12,7 +12,7 @@
         "mysql", "mariadb", "percona", "handler socket", "HandlerSocket", "nosql"
     ],
     "support": {
-        "source": "http://github.com/tz-lom/HSPHP"
+        "source": "http://github.com/visualarts/HSPHP"
     },
     "autoload": {
         "psr-0" : {
