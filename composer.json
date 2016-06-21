@@ -1,18 +1,22 @@
 {
-    "name": "tz-lom/hsphp",
+    "name": "visualarts/hsphp",
     "description": "Client library for MySQL HandlerSocket extension.",
     "license": "MIT",
     "authors": [
         {
             "name": "Nuzhdin Urii",
             "email": "nuzhdin.urii@gmail.com"
+        },
+        {
+            "name": "k_yamada",
+            "homepage": "https://github.com/visualarts"
         }
     ],
     "keywords": [
         "mysql", "mariadb", "percona", "handler socket", "HandlerSocket", "nosql"
     ],
     "support": {
-        "source": "http://github.com/tz-lom/HSPHP"
+        "source": "http://github.com/visualarts/HSPHP"
     },
     "autoload": {
         "psr-0" : {
