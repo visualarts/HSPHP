@@ -85,11 +85,15 @@ class ReadHandler
             return $ret;
         }
 
+		/* Same ReadSocket
         $result = array();
         foreach ($ret as $row) {
             $result[] = array_combine($this->fields, $row);
         }
         return $result;
+		*/
+		
+		return $ret;
     }
 
     /**
