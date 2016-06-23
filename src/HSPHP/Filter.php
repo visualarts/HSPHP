@@ -58,7 +58,7 @@ class Filter
      */
     public function getCompare()
     {
-        return $this->comparison->getComparison();
+        return $this->compare;
     }
 	
     /**
