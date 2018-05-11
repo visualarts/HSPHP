@@ -27,8 +27,8 @@ interface ReadCommandsInterface
      * @param string  $db
      * @param string  $table
      * @param string  $key
-     * @param string  $fields
-     * @param array  $filter_fields
+     * @param string[]  $fields
+     * @param string[]  $filter_fields
      *
      * @return void
      */
@@ -40,8 +40,8 @@ interface ReadCommandsInterface
      * @param string $db
      * @param string $table
      * @param string $key
-     * @param string $fields
-     * @param array $filter_fields
+     * @param string[] $fields
+     * @param string[] $filter_fields
      *
      * @return integer
      */
