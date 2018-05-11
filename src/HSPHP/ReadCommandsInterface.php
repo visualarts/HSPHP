@@ -57,10 +57,11 @@ interface ReadCommandsInterface
      * @param array $keys
      * @param integer $limit
      * @param integer $begin
-     * @param array $in_values
+	 * @param integer $in_col
+	 * @param array $in_values
      * @param Filter[] $filters
      *
      * @return void
      */
-    public function select($index, $compare, $keys, $limit = 1, $begin = 0, $in_values = array(), $filters = array());
+    public function select($index, $compare, $keys, $limit = 1, $begin = 0, $in_col = 0, $in_values = array(), $filters = array());
 }
