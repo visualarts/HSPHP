@@ -291,9 +291,9 @@ class ReadSocket implements ReadCommandsInterface
     /**
      * {@inheritdoc}
      */
-    public function select($index, $compare, $keys, $limit = 1, $begin = 0, $in = array(), $filters = array())
+    public function select($index, $compare, $keys, $limit = 1, $begin = 0, $in_col = 0, $in_values = array(), $filters = array())
     {
-        $ivlen = count($in);
+        $ivlen = count($in_values);
 
         $query = $index . self::SEP . $compare . self::SEP . count($keys);
 
@@ -310,9 +310,9 @@ class ReadSocket implements ReadCommandsInterface
         }
 
         if ($ivlen) {
-            $query .= self::SEP . '@' . self::SEP . '0' . self::SEP . $ivlen;
+            $query .= self::SEP . '@' . self::SEP . $in_col . self::SEP . $ivlen;
 
-            foreach($in as $value) {
+            foreach($in_values as $value) {
                 $query .= self::SEP . $this->encodeString((string)$value);
             }
         }

@@ -28,7 +28,7 @@ interface ReadCommandsInterface
      * @param string  $table
      * @param string  $key
      * @param string  $fields
-     * @param string  $filter_fields
+     * @param array  $filter_fields
      *
      * @return void
      */
@@ -41,7 +41,7 @@ interface ReadCommandsInterface
      * @param string $table
      * @param string $key
      * @param string $fields
-     * @param string $filter_fields
+     * @param array $filter_fields
      *
      * @return integer
      */
@@ -57,10 +57,10 @@ interface ReadCommandsInterface
      * @param array $keys
      * @param integer $limit
      * @param integer $begin
-     * @param array $in
+     * @param array $in_values
      * @param Filter[] $filters
      *
      * @return void
      */
-    public function select($index, $compare, $keys, $limit = 1, $begin = 0, $in = array(), $filters = array());
+    public function select($index, $compare, $keys, $limit = 1, $begin = 0, $in_values = array(), $filters = array());
 }
